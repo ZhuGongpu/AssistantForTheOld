@@ -1,0 +1,130 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f0f0f0">
+    
+    <RelativeLayout
+        android:id="@+id/notify_list_top"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/bg9">
+        
+        <TextView 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:gravity="center"
+            android:text="功能设置"
+            android:textSize="20sp"       
+            android:padding="10sp"
+            android:textColor="#cacaca"
+            android:layout_centerVertical="true"/>
+        
+        
+    </RelativeLayout>
+    
+    <ToggleButton 
+        android:id="@+id/config_tb1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/notify_list_top"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="20sp"
+        android:layout_marginRight="20sp"/>
+    <TextView 
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/config_tb1"
+        android:layout_alignBottom="@id/config_tb1"
+        android:layout_alignParentLeft="true"
+        android:text="进入界面自动语音阅读"
+        android:textSize="17sp"
+        android:gravity="center"
+        android:layout_marginLeft="20sp"/>
+    <ImageView 
+        android:src="@drawable/sep"
+        android:scaleType="fitXY"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/config_tb1"
+       	android:layout_marginTop="10sp"/>
+    
+    
+    <ToggleButton 
+        android:id="@+id/config_tb2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/config_tb1"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="20sp"
+        android:layout_marginRight="20sp"/>
+    <TextView 
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/config_tb2"
+        android:layout_alignBottom="@id/config_tb2"
+        android:layout_alignParentLeft="true"
+        android:text="消息提醒是否震动"
+        android:textSize="17sp"
+        android:gravity="center"
+        android:layout_marginLeft="20sp"/>
+    <ImageView 
+        android:src="@drawable/sep"
+        android:id="@+id/config_sep1"
+        android:scaleType="fitXY"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/config_tb2"
+       	android:layout_marginTop="10sp"/>
+    
+    
+    <RelativeLayout 
+        android:id="@+id/config_bt1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/config_sep1"
+        android:paddingBottom="20sp">
+        
+        <TextView 
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"        
+	        android:layout_alignParentLeft="true"
+	        android:layout_alignParentTop="true"
+	        android:text="语音阅读人声选择"
+	        android:textSize="17sp"
+	        android:gravity="center"
+	        android:layout_marginLeft="20sp"
+	        android:layout_marginTop="17sp"/>        
+    </RelativeLayout>
+    
+    <ImageView 
+        android:src="@drawable/sep"    
+        android:id="@+id/config_sep2"    
+        android:scaleType="fitXY"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/config_bt1"
+       	/>
+    
+    <RelativeLayout 
+        android:id="@+id/config_bt2"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/config_sep2"
+        android:paddingBottom="20sp">
+        
+    	<TextView 
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"        
+	        android:layout_alignParentLeft="true"
+	        android:layout_alignParentTop="true"
+	        android:text="关于"
+	        android:textSize="17sp"
+	        android:gravity="center"
+	        android:layout_marginLeft="20sp"
+	        android:layout_marginTop="17sp"/>        
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+        android:background="@drawable/sunset">
+
+    <TextView
+            android:id="@+id/calleeName"
+            android:textSize="30sp"
+            android:layout_centerInParent="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+    <FrameLayout
+            android:layout_alignParentBottom="true"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        <LinearLayout
+                android:visibility="invisible"
+                android:orientation="horizontal"
+                android:id="@+id/call_in_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+            <Button
+                    android:layout_weight="1"
+                    android:text="接听"
+                    android:textSize="25sp"
+                    android:id="@+id/acceptCallButton"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"/>
+
+            <Button
+                    android:layout_weight="1"
+                    android:text="拒绝"
+                    android:textSize="25sp"
+                    android:id="@+id/rejectCallButton"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"/>
+        </LinearLayout>
+
+        <LinearLayout
+                android:visibility="invisible"
+                android:orientation="horizontal"
+                android:id="@+id/call_out_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+            <Button
+                    android:text="挂断"
+                    android:textSize="25sp"
+                    android:id="@+id/hangUpButton"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"/>
+        </LinearLayout>
+
+    </FrameLayout>
+
+</RelativeLayout>

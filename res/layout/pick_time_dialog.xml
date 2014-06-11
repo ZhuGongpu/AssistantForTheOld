@@ -1,0 +1,37 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:paddingTop="10sp"
+    android:paddingLeft="30sp"
+    android:paddingRight="30sp">
+    
+    <TimePicker 
+        android:id="@+id/pick_dialog_picker"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true" 
+        android:layout_centerHorizontal="true"/>
+    <EditText 
+        android:id="@+id/pick_dialog_input"
+        android:inputType="text"
+        android:hint="输入您的提醒内容"
+        android:layout_width="wrap_content"
+        android:width="200sp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        
+        android:layout_below="@id/pick_dialog_picker"
+        android:layout_marginTop="10sp"/> 
+    <Button 
+        android:id="@+id/pick_dialog_button"
+        android:layout_width="wrap_content"
+        android:width="200sp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/pick_dialog_input"
+        android:layout_marginTop="10sp"
+        android:text="确定"
+        />
+    
+</RelativeLayout>
